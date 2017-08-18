@@ -29,8 +29,8 @@ var server = http.createServer((req, res) => {
     if (!config.enable_sts) {
       res.end(`
         var G_ROOT_AK = "${config.ak}";
-        var G_AK = "${config.ak}";
-        var G_SK = "${config.sk}";
+        var G_AK = null;
+        var G_SK = null;
         var G_SESSION_TOKEN = null;
         var G_BUCKET = "${config.bucket}";
         var G_UPTOKEN_URL = "${config.uptoken_url}";
